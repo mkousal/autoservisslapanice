@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoservis</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Updated Bootstrap CSS for 5.3 -->
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,13 +14,14 @@
         <p>Poskytujeme profesionální služby pro vaše vozidlo</p>
     </header>
     
+    <!-- Updated Navbar for Bootstrap 5.3 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Autoservis</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#services">Služby</a>
                 </li>
@@ -80,22 +82,29 @@
             <h2 class="text-center">Kontakt</h2>
             <p class="text-center">Neváhejte nás kontaktovat pro více informací nebo objednání termínu.</p>
             <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="name">Jméno</label>
-                        <input type="text" class="form-control" id="name" placeholder="Vaše jméno">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Jméno</label>
+                            <input type="text" class="form-control" id="name" placeholder="Vaše jméno">
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Váš email">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Váš email">
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Zpráva</label>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Zpráva</label>
                     <textarea class="form-control" id="message" rows="4" placeholder="Vaše zpráva"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Odeslat</button>
             </form>
+            <div class="google-map mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163.05351797573823!2d16.725767451800234!3d49.165335993715374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712ea53851b59cf%3A0x7c5626fb028c43cd!2s%C4%8Cechova%20324%2F35%2C%20664%2051%20%C5%A0lapanice%20u%20Brna!5e0!3m2!1scs!2scz!4v1718022975584!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
         </div>
     </section>
 
@@ -103,8 +112,8 @@
         <p>&copy; 2024 Autoservis. Všechna práva vyhrazena.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Updated JavaScript for Bootstrap 5.3 -->
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
